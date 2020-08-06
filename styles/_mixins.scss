@@ -3,7 +3,7 @@
 
 @mixin main-container($width,$height,$color){
     width: $width;
-    height: $height;
+    //height: $height;
     margin:0 auto;
     text-align: center;
 }
@@ -35,4 +35,20 @@
     border-radius:$radius;
     position:$position;
 
+}
+
+@mixin text-styles{
+    font : {
+
+        family:$primary-font;
+        size: 1rem;
+    }
+    color: $secondary-color;
+    width: 100%;
+    position: absolute;
+    top: 2rem;
+       .data{
+            color:$primary-color;
+            font-weight: bold;
+       }
 }
