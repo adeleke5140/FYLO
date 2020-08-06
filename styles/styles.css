@@ -10,6 +10,7 @@ html {
   background: url("../images/bg-mobile.png") no-repeat fixed center;
   background-size: cover;
   max-width: 375px;
+  font-family: "Raleway", sans-serif;
 }
 
 @media (min-width: 600px) {
@@ -22,7 +23,6 @@ html {
 
 .main-container {
   width: 300px;
-  height: 500px;
   margin: 0 auto;
   text-align: center;
 }
@@ -84,5 +84,110 @@ html {
   margin-top: 1rem;
   border-radius: 15px;
   position: relative;
+}
+
+.content .major-text {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  color: #848794;
+  width: 100%;
+  position: absolute;
+  top: 2rem;
+}
+
+.content .major-text .data {
+  color: #dddbff;
+  font-weight: bold;
+}
+
+.container2 {
+  position: relative;
+}
+
+.container2 .area2 {
+  position: absolute;
+  width: 280px;
+  bottom: 7em;
+  right: 8px;
+}
+
+.container2 .area2 .progress-bar {
+  width: 100%;
+  height: 1em;
+  border: 2px solid #122052;
+  background: #122052;
+  border-radius: 20px;
+}
+
+.container2 .area2 .progress-bar .box {
+  height: 0.75em;
+  width: 75%;
+  background: -webkit-gradient(linear, left top, right top, from(#ffa399), color-stop(60%), to(#ff4d97));
+  background: linear-gradient(0.25turn, #ffa399, 60%, #ff4d97);
+  border-radius: inherit;
+}
+
+.container2 .area2 .progress-bar .box .ball {
+  width: .6em;
+  background: #dddbff;
+  height: inherit;
+  border-radius: 50%;
+  position: absolute;
+  left: 12.35em;
+  height: .6em;
+  top: 3px;
+}
+
+.bar-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-top: 1em;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #dddbff;
+}
+
+.container3 {
+  position: relative;
+  background: #dddbff;
+  width: 200px;
+  height: 80px;
+  border-radius: 10px;
+  bottom: 3em;
+  left: 16%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container3 .text3 {
+  text-transform: uppercase;
+  padding: 1em;
+  color: #848794;
+}
+
+.container3 .text3 .left {
+  font-size: 2.9rem;
+  color: #0c122c;
+  font-weight: 600;
+}
+
+.container3 .text3 .left2 {
+  font-weight: bold;
+  position: relative;
+  bottom: 7px;
+  left: 2px;
 }
 /*# sourceMappingURL=styles.css.map */
