@@ -1,0 +1,38 @@
+@use '_variables.scss' as *;
+
+
+@mixin main-container($width,$height,$color){
+    width: $width;
+    height: $height;
+    margin:0 auto;
+    text-align: center;
+}
+
+
+@mixin container1 {
+    height: 220px;
+    width: 300px;
+    background-color:$secondary-color2;
+    display: inline-block;
+    margin-top: 60%;
+    border:none;
+    border-radius: 15px 50% 15px 15px;
+    position: relative;
+}
+
+@mixin icons-bg($padding,$border,$color) {
+    position: absolute;
+    padding:        $padding;
+    border-radius:  $border;
+    background:     $color;
+}
+
+@mixin container2-content($color,$width,$height,$margin,$radius,$position){
+    background-color: $color;
+    width: $width;
+    height: $height;
+    margin-top: $margin;
+    border-radius:$radius;
+    position:$position;
+
+}
