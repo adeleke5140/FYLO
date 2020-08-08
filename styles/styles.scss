@@ -1,6 +1,7 @@
 @import "_reset.scss";
 @import "_variables.scss" ;
 @import "_mixins.scss";
+//@import "_media.scss";
 
 
 html {
@@ -10,11 +11,12 @@ html {
     font-family: $primary-font;
 }
 
-@media (min-width:600px){
-    html{
+@media only screen and (min-width:600px) and (max-width:1440px){
+    body{
         background: url('../images/bg-desktop.png') no-repeat fixed center;
         background-size: cover;
         max-width: 1440px;
+        display: flex;
     }
 }
 
@@ -65,6 +67,7 @@ html {
 
 .container2{
     position: relative;
+    bottom: $bottom-nbsp;
     .area2{
         position: absolute;
         width: 280px;
@@ -115,7 +118,7 @@ html {
     width:200px;
     height:80px;
     border-radius: 10px;
-    bottom: 3em;
+    bottom: 6em;
     left:16%;
     display: flex;
     justify-content: center;
