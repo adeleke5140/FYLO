@@ -1,8 +1,14 @@
-@media (min-width:600px){
+@media (max-width:600px) {
     body{
-        background: url('../images/bg-desktop.png') no-repeat fixed center;
-        background-size: cover;
-        max-width: 1440px;
-        display: flex;
+    background-image: url('../images/bg-mobile.png');
+    }
+}
+
+@media (min-width:600px) and (max-width:1440px){
+    body{
+        background-image: url('../images/bg-desktop.png');
+        background-size:auto;
+        background-position: bottom;
+        background-color: $tertiary-color;
     }
 }

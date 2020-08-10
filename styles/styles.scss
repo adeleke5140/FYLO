@@ -4,21 +4,31 @@
 //@import "_media.scss";
 
 
-html {
-    background: url('../images/bg-mobile.png') no-repeat fixed center;
-    background-size: cover;
-    max-width: 375px;
+body {
     font-family: $primary-font;
+    background-position: center center; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
 }
-
-@media only screen and (min-width:600px) and (max-width:1440px){
+//media queries
+@media (max-width:600px) {
     body{
-        background: url('../images/bg-desktop.png') no-repeat fixed center;
-        background-size: cover;
-        max-width: 1440px;
-        display: flex;
+    background-image: url('../images/bg-mobile.png');
     }
 }
+
+@media (min-width:600px) and (max-width:1440px){
+    body{
+        background-image: url('../images/bg-desktop.png');
+        background-size:auto;
+        background-position: bottom;
+        background-color: $tertiary-color;
+    }
+}
+// end of media queries section
+
+
 
 .main-container {
    @include main-container (300px,500px,green);
@@ -135,6 +145,7 @@ html {
                 .left2{
                     font-weight: bold;
                     position:relative;
+                    color: $secondary-color;
                     bottom:7px;
                     left:2px;
                 }

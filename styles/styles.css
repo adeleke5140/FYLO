@@ -6,21 +6,26 @@
 }
 
 @use '_variables.scss' as *;
-html {
-  background: url("../images/bg-mobile.png") no-repeat fixed center;
-  background-size: cover;
-  max-width: 375px;
+body {
   font-family: "Raleway", sans-serif;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1440px) {
+@media (max-width: 600px) {
   body {
-    background: url("../images/bg-desktop.png") no-repeat fixed center;
-    background-size: cover;
-    max-width: 1440px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    background-image: url("../images/bg-mobile.png");
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1440px) {
+  body {
+    background-image: url("../images/bg-desktop.png");
+    background-size: auto;
+    background-position: bottom;
+    background-color: #0c122c;
   }
 }
 
@@ -198,6 +203,7 @@ html {
 .container3 .text3 .left2 {
   font-weight: bold;
   position: relative;
+  color: #848794;
   bottom: 7px;
   left: 2px;
 }
