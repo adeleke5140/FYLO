@@ -154,4 +154,56 @@ body {
 }
 
 
+//media queries for desktop layout
+
+@media only screen and (min-width:992px) and (max-width:1440px){
+    .main-container{
+       // display: grid;
+        //grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container1 {
+        bottom: -16em;
+        top:1em;
+        left:-18em;
+    }
+
+    .container2{
+        bottom: 12.75em;
+        width: 200px;
+            .content {
+                width: 550px;
+                height: 10em;
+                top: 2.5em;
+                left: 2em;
+                    .major-text {
+                        position: absolute;
+                        top: 2rem;
+                        text-align: left;
+                        left: 2em;
+                    }
+            }
+            .area2 {
+                position: absolute;
+                width: 500px;
+                bottom: 2em;
+                left: 4em;
+                    .progress-bar{
+                        padding: 0 0.5em;
+                            .box{
+                                //height: 0.7em;
+                                width:80%;
+                                position: relative;
+                                left: -8px;
+                                bottom: 0.2px;
+                                    .ball{
+                                        top:1.34px;
+                                        left: 23.3em;
+                                    }
+                            }
+                    }
+            }
+    }
+}
+
 

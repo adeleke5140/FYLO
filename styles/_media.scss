@@ -5,10 +5,13 @@
 }
 
 @media (min-width:600px) and (max-width:1440px){
+
     body{
         background-image: url('../images/bg-desktop.png');
         background-size:auto;
         background-position: bottom;
         background-color: $tertiary-color;
     }
+
 }
+

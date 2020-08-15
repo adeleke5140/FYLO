@@ -207,4 +207,47 @@ body {
   bottom: 7px;
   left: 2px;
 }
+
+@media only screen and (min-width: 992px) and (max-width: 1440px) {
+  .container1 {
+    bottom: -16em;
+    top: 1em;
+    left: -18em;
+  }
+  .container2 {
+    bottom: 12.75em;
+    width: 200px;
+  }
+  .container2 .content {
+    width: 550px;
+    height: 10em;
+    top: 2.5em;
+    left: 2em;
+  }
+  .container2 .content .major-text {
+    position: absolute;
+    top: 2rem;
+    text-align: left;
+    left: 2em;
+  }
+  .container2 .area2 {
+    position: absolute;
+    width: 500px;
+    bottom: 2em;
+    left: 4em;
+  }
+  .container2 .area2 .progress-bar {
+    padding: 0 0.5em;
+  }
+  .container2 .area2 .progress-bar .box {
+    width: 80%;
+    position: relative;
+    left: -8px;
+    bottom: 0.2px;
+  }
+  .container2 .area2 .progress-bar .box .ball {
+    top: 1.34px;
+    left: 23.3em;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
